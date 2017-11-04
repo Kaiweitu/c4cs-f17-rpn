@@ -7,5 +7,5 @@ install:
 script: 
     - make test
     - coverage run test_rpn.py test
-after_success
+after_success:
     - coveralls
