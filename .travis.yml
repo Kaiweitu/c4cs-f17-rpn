@@ -2,3 +2,6 @@ language: python
 python:
     -"3.5"
 script: make test
+group: stable
+dist: trusty
+os: linux
