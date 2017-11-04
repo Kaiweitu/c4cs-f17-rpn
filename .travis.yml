@@ -1,7 +1,4 @@
 language: python
-sudo: true
 python:
-    -"3.5-dev"
+    -"2.7"
 script: make test
-group: stable
-dist: trusty
