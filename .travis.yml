@@ -4,6 +4,7 @@ python:
 install:
     - pip install python-coveralls
     - pip install coverage
+    - pip install colorama
 script: 
     - make test
     - coverage run test_rpn.py test
