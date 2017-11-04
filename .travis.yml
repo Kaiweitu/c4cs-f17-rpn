@@ -5,4 +5,3 @@ python:
 script: make test
 group: stable
 dist: trusty
-os: linux
