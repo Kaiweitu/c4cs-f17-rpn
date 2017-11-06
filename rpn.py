@@ -2,7 +2,6 @@
 
 import operator
 import readline
-#from termcolor import colored
 import logging, sys
 import getopt
 from colorama import init
@@ -15,6 +14,7 @@ ops = {
     '*': operator.mul,
     '/': operator.truediv,
     '^': operator.pow,
+    '<<': operator.lshift,
 }
 
 def calculate(myarg):
@@ -48,7 +48,7 @@ def main(argv):
     if ( opts and opts[0][0] in ('-d','--debug') ):
         logging.basicConfig(stream=sys.stderr, level=logging.DEBUG)
     else:
-        logging.basicConfig(stream=sys.stderr, level=logging.INFO)
+        logging.basicConfig(stream=sys.stdout, level=logging.INFO)
     while True:
         inputOption = input("rpn calc> ")
         if ( inputOption == "exit"):
